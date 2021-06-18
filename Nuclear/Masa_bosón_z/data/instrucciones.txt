@@ -1,0 +1,16 @@
+El programa es bastante directo. Primero se definen las funciones para calcular los
+parámetros ETA, PT y MBZ. Después se definen las funciones para importar el archivo,
+generar un dataframe y generar las columnas que almacenen los parámetros ETA, PT y MBZ
+para cada par de partículas. También se definen dos funciones para representar los
+histogramas: una para los histogragramas de ETA y PT y otra para MBZ, que también
+realiza el ajuste. La función analysis final usa todas estas funciones para proceder
+al análisis de un fichero de datos como se explica en el informe.
+
+He modificado un poco los archivos de datos para poder trabajar con Pandas sin
+problemas. Simplemente he quitado la segunda fila que eran # para separar los títulos y
+los datos y he quitado el # que había en el primer caracter de la fila de los títulos.
+
+Para reproducir los resultados basta con cambiar el archivo con el que se quiere
+trabajar en el parámetro archivo_datos de la función analysis. Para el histograma de la masa, 100 bins es suficiente para todos los archivos menos para el archivo de datos
+del electrón, que es mejor utilizar 60 bins.
+
